@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>WaveSurfer Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>WaveSurfer Ionic app!</h3>
+
+
+
+  <div id="waveform"></div>
+
+  <div class="container" style="text-align: center">
+    <button ion-button (click)="wavesurfer.playPause()">
+    <i class="glyphicon glyphicon-play"></i>
+    Play/Pause
+  </button>
+
+    <div id="equalizer" style="margin-top: 10px"></div>
+  </div>
+
+</ion-content>
